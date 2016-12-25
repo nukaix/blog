@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
     <!--Description-->
     
@@ -32,18 +32,14 @@
     <title>page - xia kun</title>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/sass/main.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
 
-    <!--[if lt IE 8]>
-        <script src="/js/ie/html5shiv.js"></script>
-    <![endif]-->
-
-    <!--[if lt IE 8]>
-        <link rel="stylesheet" href="/sass/ie8.css">
-    <![endif]-->
-
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <link rel="stylesheet" href="/sass/ie9.css">
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
     <!-- Gallery -->
@@ -57,138 +53,84 @@
 
 <body>
 
-    <div id="wrapper">
-
-        <!-- Menu -->
-        <!-- Header -->
-<header id="header">
-    <div class="inner">
-
-        <!-- Logo -->
-        <a href="/" class="logo">
-            <span class="symbol"><img src="/images/logo.svg" alt="" /></span><span class="title">xia kun</span>
-        </a>
-
-        <!-- Nav -->
-        <nav>
-            <ul>
-                <li><a href="#menu">Menu</a></li>
-            </ul>
-        </nav>
-
-    </div>
-</header>
-
 <!-- Menu -->
-<nav id="menu">
-    <h2>Menu</h2>
-    <ul>
-        
+<!-- Navigation -->
+<header>
+    <div class="logo">
+        <a href="/">xia kun</a>
+    </div><!-- end logo -->
+
+    <div id="menu_icon"></div>
+    <nav>
+        <ul>
+            
             <li>
                 <a href="/">Home</a>
             </li>
-        
+            
             <li>
                 <a href="/archives">Archives</a>
             </li>
-        
+            
             <li>
-                <a href="/about">About</a>
+                <a href="/about/">About</a>
             </li>
-        
-    </ul>
-</nav>
+            
+        </ul>
+    </nav><!-- end navigation menu -->
 
+    <div class="footer clearfix">
+        <ul class="social clearfix">
+            
+                <li><a href="https://www.facebook.com/" class="twitter" target="_blank" data-title="Twitter"></a></li>
+            
+            
+                <li><a href="https://www.facebook.com/" class="fb" target="_blank" data-title="微博"></a></li>
+            
+            
+                <li><a href="https://www.behance.net/" class="behance" target="_blank" data-title="Instagram"></a></li>
+            
+            
+                <li><a href="https://plus.google.com/+Pixelhint/posts" class="google" target="_blank" data-title="豆瓣"></a></li>
+            
+            
+            
+        </ul><!-- end social -->
 
-        <div id="main">
-            <div class="inner">
+        <div class="rights">
+            <p>Copyright © 2016 xiakun.</p>
+        </div><!-- end rights -->
+    </div ><!-- end footer -->
+</header><!-- end header -->
 
-                <!-- Main Content -->
-                <header>
-    <h1></h1>
-    <p>About life, books, design, interactive and code.</p>
-</header>
-
-<section class="tiles">
+<!-- Main Content -->
+<section class="main clearfix">
     
-        
-
-<article class="style1">
-    <span class="image">
-        <img src="http://ocx8vgm15.bkt.clouddn.com/1.jpg" alt="" />
-    </span>
+        <div class="work">
     <a href="/2016/12/25/hello-world/">
-        <h2>Hello World</h2>
-        <div class="content">
-            <p></p>
+        <img src="http://placehold.it/450x450" class="media" alt=""/>
+        <div class="caption">
+            <div class="work_title">
+                <h1>Hello World</h1>
+            </div>
         </div>
     </a>
-</article>
+</div>
     
+    
+    <div class="pagination-container">
+        
+            <div class="pagination"><a href="/">上一页</a></div>
+        
+        
+    </div>
+
 </section>
 
+<!-- After footer scripts -->
 
-    <div class="pagination-container">
-        <div class="pagination "><a href="/"><i class="icon fa-caret-left"></i></a></div>
-        <div class="pagination disabled"><a href="/"><i class="icon fa-caret-right"></i></a></div>
-    </div>
-
-
-
-            </div>
-        </div>
-
-        <!-- Footer -->
-<footer id="footer">
-    <div class="inner">
-        <section>
-            <h2>About</h2>
-            <div>
-                Developer, UI Designer.
-            </div>
-        </section>
-        <section>
-            <h2>Follow</h2>
-            <ul class="icons">
-                
-                    <li><a href="http://weibo.com/xiakun1993/profile?rightmod=1&wvr=6&mod=personinfo" class="icon style2 fa-weibo" target="_blank" ><span class="label">weibo</span></a></li>
-                
-                
-                    <li><a href="https://twitter.com/nukaix" class="icon style2 fa-twitter" target="_blank" ><span class="label">twitter</span></a></li>
-                
-                
-                    <li><a href="https://www.instagram.com/shiyidianshui/" class="icon style2 fa-instagram" target="_blank" ><span class="label">Instagram</span></a></li>
-                
-                
-                
-                
-                
-                
-                
-                
-            </ul>
-        </section>
-        <ul class="copyright">
-            <li>&copy; Copyright 2016 by xiakun.</li>
-        </ul>
-    </div>
-</footer>
-    </div>
-
-    <!-- After footer scripts -->
-    
 <!-- jQuery -->
-<script src="/js/jquery.min.js"></script>
-
-<!-- skel -->
-<script src="/js/skel.min.js"></script>
-
-<!-- Custom Code -->
-<script src="/js/util.js"></script>
-
-<!--[if lte IE 8]>
-<script src="/js/ie/respond.min.js"></script>
-<![endif]-->
+<script src="/js/jquery.js"></script>
 
 <!-- Custom Code -->
 <script src="/js/main.js"></script>

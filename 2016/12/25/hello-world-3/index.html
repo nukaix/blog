@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
     <!--Description-->
     
@@ -36,18 +36,14 @@
     <title>我的第三篇博文 - xia kun</title>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/sass/main.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
 
-    <!--[if lt IE 8]>
-        <script src="/js/ie/html5shiv.js"></script>
-    <![endif]-->
-
-    <!--[if lt IE 8]>
-        <link rel="stylesheet" href="/sass/ie8.css">
-    <![endif]-->
-
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <link rel="stylesheet" href="/sass/ie9.css">
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
     <!-- Gallery -->
@@ -61,73 +57,92 @@
 
 <body>
 
-    <div id="wrapper">
-
-        <!-- Menu -->
-        <!-- Header -->
-<header id="header">
-    <div class="inner">
-
-        <!-- Logo -->
-        <a href="/" class="logo">
-            <span class="symbol"><img src="/images/logo.svg" alt="" /></span><span class="title">xia kun</span>
-        </a>
-
-        <!-- Nav -->
-        <nav>
-            <ul>
-                <li><a href="#menu">Menu</a></li>
-            </ul>
-        </nav>
-
-    </div>
-</header>
-
 <!-- Menu -->
-<nav id="menu">
-    <h2>Menu</h2>
-    <ul>
-        
+<!-- Navigation -->
+<header>
+    <div class="logo">
+        <a href="/">xia kun</a>
+    </div><!-- end logo -->
+
+    <div id="menu_icon"></div>
+    <nav>
+        <ul>
+            
             <li>
                 <a href="/">Home</a>
             </li>
-        
+            
             <li>
                 <a href="/archives">Archives</a>
             </li>
-        
+            
             <li>
-                <a href="/about">About</a>
+                <a href="/about/">About</a>
             </li>
+            
+        </ul>
+    </nav><!-- end navigation menu -->
+
+    <div class="footer clearfix">
+        <ul class="social clearfix">
+            
+                <li><a href="https://www.facebook.com/" class="twitter" target="_blank" data-title="Twitter"></a></li>
+            
+            
+                <li><a href="https://www.facebook.com/" class="fb" target="_blank" data-title="微博"></a></li>
+            
+            
+                <li><a href="https://www.behance.net/" class="behance" target="_blank" data-title="Instagram"></a></li>
+            
+            
+                <li><a href="https://plus.google.com/+Pixelhint/posts" class="google" target="_blank" data-title="豆瓣"></a></li>
+            
+            
+            
+        </ul><!-- end social -->
+
+        <div class="rights">
+            <p>Copyright © 2016 xiakun.</p>
+        </div><!-- end rights -->
+    </div ><!-- end footer -->
+</header><!-- end header -->
+
+<!-- Main Content -->
+<section class="main clearfix">
+
+    <section class="top" style="background: url('http://ocx8vgm15.bkt.clouddn.com/image/5.jpg');">
+        <div class="wrapper content_header clearfix">
+            
+
+<div class="work_nav">
+
+    <ul class="btn clearfix">
+        
+        <li><a href="/2016/12/25/hello-world-2/" class="previous" data-title="我的第二篇博文"></a></li>
+        
+        <li><a href="/" class="grid" data-title="Portfolio"></a></li>
+        
+        <li><a href="/2016/12/25/hello-world-4/" class="next" data-title="我的第四篇博文"></a></li>
         
     </ul>
-</nav>
+
+</div><!-- end work_nav -->
+            <h1 class="title">我的第三篇博文</h1>
+        </div>
+    </section><!-- end top -->
+
+    <section class="wrapper">
+        <div class="content">
+
+            <!-- Gallery -->
+            
+
+            <!-- Content -->
+            <p>dadadadlkfjgdbdmd.bmd’lvk大大大大md’lvk大大大大md’lvk大大大大md’lvk大大大大md’lvk大大大大md’lvk大大大大md’lvk大大大大md’lvk大大大大md’lvk大大大大md’lvk大大大大md’lvk大大大大md’lvk大大大大</p>
 
 
-        <div id="main">
-            <div class="inner">
-
-                <!-- Main Content -->
-                
-
-    <h1 class="title">我的第三篇博文</h1>
-    <div class="meta">
-        2016-12-25
-    </div>
-
-
-    <span class="image main"><img src="http://ocx8vgm15.bkt.clouddn.com/image/5.jpg" alt="" /></span>
-
-
-<!-- Gallery -->
-
-
-<!-- Content -->
-<p>dadadadlkfjgdbdmd.bmd’lvk大大大大md’lvk大大大大md’lvk大大大大md’lvk大大大大md’lvk大大大大md’lvk大大大大md’lvk大大大大md’lvk大大大大md’lvk大大大大md’lvk大大大大md’lvk大大大大md’lvk大大大大</p>
-
-
-<!-- Tags -->
-
+            <!-- Tags -->
+            
 
 
 <div class="tags">
@@ -136,69 +151,20 @@
 
 
 
-<!-- Comments -->
-<div>
-    
-
-
-</div>
-
-
-
-            </div>
-        </div>
-
-        <!-- Footer -->
-<footer id="footer">
-    <div class="inner">
-        <section>
-            <h2>About</h2>
+            <!-- Comments -->
             <div>
-                Developer, UI Designer.
+                
+
+
             </div>
-        </section>
-        <section>
-            <h2>Follow</h2>
-            <ul class="icons">
-                
-                    <li><a href="http://weibo.com/xiakun1993/profile?rightmod=1&wvr=6&mod=personinfo" class="icon style2 fa-weibo" target="_blank" ><span class="label">weibo</span></a></li>
-                
-                
-                    <li><a href="https://twitter.com/nukaix" class="icon style2 fa-twitter" target="_blank" ><span class="label">twitter</span></a></li>
-                
-                
-                    <li><a href="https://www.instagram.com/shiyidianshui/" class="icon style2 fa-instagram" target="_blank" ><span class="label">Instagram</span></a></li>
-                
-                
-                
-                
-                
-                
-                
-                
-            </ul>
-        </section>
-        <ul class="copyright">
-            <li>&copy; Copyright 2016 by xiakun.</li>
-        </ul>
-    </div>
-</footer>
-    </div>
+        </div><!-- end content -->
+    </section>
+</section><!-- end main -->
 
-    <!-- After footer scripts -->
-    
+<!-- After footer scripts -->
+
 <!-- jQuery -->
-<script src="/js/jquery.min.js"></script>
-
-<!-- skel -->
-<script src="/js/skel.min.js"></script>
-
-<!-- Custom Code -->
-<script src="/js/util.js"></script>
-
-<!--[if lte IE 8]>
-<script src="/js/ie/respond.min.js"></script>
-<![endif]-->
+<script src="/js/jquery.js"></script>
 
 <!-- Custom Code -->
 <script src="/js/main.js"></script>
