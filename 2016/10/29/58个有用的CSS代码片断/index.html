@@ -176,8 +176,7 @@ a[href$=&quot;.pdf&quot;]{
     padding-right: 20px;
     background: url(pdf.png) no-repeat center right;
 }
-</code></pre><p>看起来是这样的:<br><a href=""> http://jsfiddle.net/agusesetiyono/3sL1r0mw/light/ </a></p>
-<h1 id="4、创建跨浏览器的图像灰度"><a href="#4、创建跨浏览器的图像灰度" class="headerlink" title="4、创建跨浏览器的图像灰度"></a>4、创建跨浏览器的图像灰度</h1><p>灰度有时看起来简约和优雅，能为网站呈现更深层次的色调。在示例中，我们将对一个SVG图像添加灰度过滤：</p>
+</code></pre><h1 id="4、创建跨浏览器的图像灰度"><a href="#4、创建跨浏览器的图像灰度" class="headerlink" title="4、创建跨浏览器的图像灰度"></a>4、创建跨浏览器的图像灰度</h1><p>灰度有时看起来简约和优雅，能为网站呈现更深层次的色调。在示例中，我们将对一个SVG图像添加灰度过滤：</p>
 <pre><code>&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
     &lt;filter id=&quot;grayscale&quot;&gt;
         &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0&quot;/&gt;
@@ -199,13 +198,11 @@ a[href$=&quot;.pdf&quot;]{
 button:hover {
     background-position: 0 0;
 }
-</code></pre><p>效果在这里：<a href="">http://jsfiddle.net/agusesetiyono/gw46dk27/1/light/</a></p>
-<h1 id="6、CSS：表格列宽自适用"><a href="#6、CSS：表格列宽自适用" class="headerlink" title="6、CSS：表格列宽自适用"></a>6、CSS：表格列宽自适用</h1><p>对于表格，当谈到调整列宽时，是比较痛苦的。然后，这里有一个可以使用的技巧：给td元素添加 white-space: nowrap;能让文本正确的换行</p>
+</code></pre><h1 id="6、CSS：表格列宽自适用"><a href="#6、CSS：表格列宽自适用" class="headerlink" title="6、CSS：表格列宽自适用"></a>6、CSS：表格列宽自适用</h1><p>对于表格，当谈到调整列宽时，是比较痛苦的。然后，这里有一个可以使用的技巧：给td元素添加 white-space: nowrap;能让文本正确的换行</p>
 <pre><code>td {
     white-space: nowrap;
 }
-</code></pre><p>查看效果：<br><a href=""> http://jsfiddle.net/agusesetiyono/1uotj8wv/3/light/ </a></p>
-<h1 id="7、只在一边或两边显示盒子阴影"><a href="#7、只在一边或两边显示盒子阴影" class="headerlink" title="7、只在一边或两边显示盒子阴影"></a>7、只在一边或两边显示盒子阴影</h1><p>如果你要一个盒阴影，试试这个技巧，能为任一边添加阴影。为了实现这个，首先定义一个有具体宽高的盒子，然后正确定位:after伪类。实现底边阴影的代码如下：</p>
+</code></pre><h1 id="7、只在一边或两边显示盒子阴影"><a href="#7、只在一边或两边显示盒子阴影" class="headerlink" title="7、只在一边或两边显示盒子阴影"></a>7、只在一边或两边显示盒子阴影</h1><p>如果你要一个盒阴影，试试这个技巧，能为任一边添加阴影。为了实现这个，首先定义一个有具体宽高的盒子，然后正确定位:after伪类。实现底边阴影的代码如下：</p>
 <pre><code>.box-shadow {
     background-color: #FF8020;
     width: 160px;
@@ -230,8 +227,7 @@ button:hover {
        -moz-box-shadow: 0px 0px 8px 2px #000000;
             box-shadow: 0px 0px 8px 2px #000000;
 }
-</code></pre><p>效果：<br><a href=""> http://jsfiddle.net/agusesetiyono/1kwhsfvo/light/ </a></p>
-<h1 id="8、用CSS动画实现省略号动画"><a href="#8、用CSS动画实现省略号动画" class="headerlink" title="8、用CSS动画实现省略号动画"></a>8、用CSS动画实现省略号动画</h1><p>这个片段将帮助你制造一个ellipsis的动画，对于简单的加载状态是很有用的，而不用去使用gif图像。</p>
+</code></pre><h1 id="8、用CSS动画实现省略号动画"><a href="#8、用CSS动画实现省略号动画" class="headerlink" title="8、用CSS动画实现省略号动画"></a>8、用CSS动画实现省略号动画</h1><p>这个片段将帮助你制造一个ellipsis的动画，对于简单的加载状态是很有用的，而不用去使用gif图像。</p>
 <pre><code>.loading:after {
     overflow: hidden;
     display: inline-block;
@@ -247,8 +243,7 @@ button:hover {
         width: 15px;
     }
 }
-</code></pre><p>效果：<br><a href="">http://jsfiddle.net/agusesetiyono/MDzsR/69/light/</a></p>
-<h1 id="9、样式重置"><a href="#9、样式重置" class="headerlink" title="9、样式重置"></a>9、样式重置</h1><pre><code>html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+</code></pre><h1 id="9、样式重置"><a href="#9、样式重置" class="headerlink" title="9、样式重置"></a>9、样式重置</h1><pre><code>html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
