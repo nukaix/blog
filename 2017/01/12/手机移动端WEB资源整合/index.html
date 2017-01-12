@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--Description-->
+    
+        <meta name="description" content="meta基础知识H5页面窗口自动调整到设备宽度，并禁止用户缩放页面    
+忽略将页面中的数字识别为电话号码    
+忽略Android平台中对邮箱地址的识别
+&amp;lt;meta name=&amp;quot;format-detection&amp;quot; content=&amp;quot;email=no&amp;quot">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="xia kun">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="移动端WEB资源整合"/>
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="xia kun"/>
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content="undefined"/>
+    
+
+    <!-- Title -->
+    
+    <title>移动端WEB资源整合 - xia kun</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+<link rel="shortcut icon" href="http://ocx8vgm15.bkt.clouddn.com/image/favicon.ico"/>
+<body>
+
+<!-- Menu -->
+<!-- Navigation -->
+<header>
+    <div class="logo">
+        <a href="/">xia kun</a>
+    </div><!-- end logo -->
+
+    <div id="menu_icon"></div>
+    <nav>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+        </ul>
+    </nav><!-- end navigation menu -->
+
+    <div class="footer clearfix">
+        <ul class="social clearfix">
+            
+                <li><a href="https://twitter.com/nukaix" class="twitter" target="_blank" data-title="Twitter"></a></li>
+            
+            
+                <li><a href="http://weibo.com/xiakun1993/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" class="fb" target="_blank" data-title="微博"></a></li>
+            
+            
+                <li><a href="https://www.instagram.com/shiyidianshui/" class="behance" target="_blank" data-title="Instagram"></a></li>
+            
+            
+                <li><a href="https://www.douban.com/people/71821532/" class="google" target="_blank" data-title="豆瓣"></a></li>
+            
+            
+            
+        </ul><!-- end social -->
+
+        <div class="rights">
+            <p>Copyright © 2017 xiakun</p>
+        </div><!-- end rights -->
+    </div ><!-- end footer -->
+</header><!-- end header -->
+
+<!-- Main Content -->
+<section class="main clearfix">
+
+    <section class="top" style="background: url('http://ocx8vgm15.bkt.clouddn.com/image/bwdt-17-1-12.jpg');">
+        <div class="wrapper content_header clearfix">
+            
+
+<div class="work_nav">
+
+    <ul class="btn clearfix">
+        
+        <li><a class="previous disabled"></a></li>
+        
+        <li><a href="/" class="grid" data-title="Portfolio"></a></li>
+        
+        <li><a href="/2016/12/31/2016就要结束了/" class="next" data-title="2016年就要结束了..."></a></li>
+        
+    </ul>
+
+</div><!-- end work_nav -->
+            <h1 class="title">移动端WEB资源整合</h1>
+        </div>
+    </section><!-- end top -->
+
+    <section class="wrapper">
+        <div class="content">
+
+            <!-- Gallery -->
+            
+
+            <!-- Content -->
+            <h1 id="meta基础知识"><a href="#meta基础知识" class="headerlink" title="meta基础知识"></a>meta基础知识</h1><p>H5页面窗口自动调整到设备宽度，并禁止用户缩放页面<br>    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"></p>
+<p>忽略将页面中的数字识别为电话号码<br>    <meta name="format-detection" content="telephone=no"></p>
+<p>忽略Android平台中对邮箱地址的识别</p>
+<pre><code>&lt;meta name=&quot;format-detection&quot; content=&quot;email=no&quot; /&gt;
+</code></pre><p>当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari</p>
+<pre><code>&lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot; /&gt;
+&lt;!-- ios7.0版本以后，safari上已看不到效果 --&gt;
+</code></pre><p>将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式</p>
+<pre><code>&lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot; /&gt;
+&lt;!-- 可选default、black、black-translucent --&gt;
+</code></pre><p>viewport模板——通用</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta content=&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; name=&quot;viewport&quot;&gt;
+&lt;meta content=&quot;yes&quot; name=&quot;apple-mobile-web-app-capable&quot;&gt;
+&lt;meta content=&quot;black&quot; name=&quot;apple-mobile-web-app-status-bar-style&quot;&gt;
+&lt;meta content=&quot;telephone=no&quot; name=&quot;format-detection&quot;&gt;
+&lt;meta content=&quot;email=no&quot; name=&quot;format-detection&quot;&gt;
+&lt;title&gt;标题&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;index.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+这里开始内容
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>viewport模板 – target-densitydpi=device-dpi，android 2.3.5以下版本不支持</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=750, user-scalable=no, target-densitydpi=device-dpi&quot;&gt;&lt;!-- width取值与页面定义的宽度一致 --&gt;
+&lt;meta content=&quot;yes&quot; name=&quot;apple-mobile-web-app-capable&quot;&gt;
+&lt;meta content=&quot;black&quot; name=&quot;apple-mobile-web-app-status-bar-style&quot;&gt;
+&lt;meta content=&quot;telephone=no&quot; name=&quot;format-detection&quot;&gt;
+&lt;meta content=&quot;email=no&quot; name=&quot;format-detection&quot;&gt;
+&lt;title&gt;标题&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;index.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+这里开始内容
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>参考案例：<a href="">http://action.weixin.qq.com/payact/readtemplate?t=mobile/2015/wxzfsht/index_tmpl</a></p>
+<p>移动端字体单位font-size选择px还是rem<br>对于只需要适配少部分手机设备，且分辨率对页面影响不大的，使用px即可<br>对于需要适配各种移动设备，使用rem，例如只需要适配iPhone和iPad等分辨率差别比较挺大的设备<br>rem配置参考：</p>
+<pre><code>html{font-size:10px}
+@media screen and (min-width:321px) and (max-width:375px){html{font-size:11px}}
+@media screen and (min-width:376px) and (max-width:414px){html{font-size:12px}}
+@media screen and (min-width:415px) and (max-width:639px){html{font-size:15px}}
+@media screen and (min-width:640px) and (max-width:719px){html{font-size:20px}}
+@media screen and (min-width:720px) and (max-width:749px){html{font-size:22.5px}}
+@media screen and (min-width:750px) and (max-width:799px){html{font-size:23.5px}}
+@media screen and (min-width:800px){html{font-size:25px}}
+</code></pre>
+
+            <!-- Tags -->
+            
+
+
+<div class="tags">
+    
+</div>
+
+
+
+            <!-- Comments -->
+            <div>
+                
+
+
+<!-- Duoshuo Comment BEGIN -->
+<div class="ds-thread"></div>
+<script type="text/javascript">
+  var duoshuoQuery = {short_name: 'xiakun-blog' };
+  (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';
+      ds.async = true;
+      ds.src = 'http://static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0] 
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+<!-- Duoshuo Comment END -->
+
+            </div>
+        </div><!-- end content -->
+    </section>
+</section><!-- end main -->
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="/js/jquery.js"></script>
+
+<!-- Custom Code -->
+<script src="/js/main.js"></script>
+
+<!-- Gallery -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>
