@@ -152,7 +152,7 @@
 }
 </code></pre><p>使用这个技巧，从单行文本、段落到box，都会垂直对齐。目前浏览器对Transform的支持是需要关注的，Chrome 4, Opera 10, Safari 3, Firefox 3, and Internet Explorer 9.均支持该属性。</p>
 <h1 id="2、伸展一个元素到窗口高度"><a href="#2、伸展一个元素到窗口高度" class="headerlink" title="2、伸展一个元素到窗口高度"></a>2、伸展一个元素到窗口高度</h1><p>在具体场景中，你可能想要将一个元素伸展到窗口高度，基本元素的调整只能调整容器的大小,因此要使一个元素伸展到窗口高度，我们需要伸展顶层元素：html和body:</p>
-<pre><code>html, 
+<pre><code>html,
 body {
     height: 100%;
 }
@@ -263,7 +263,7 @@ ol, ul { list-style: none; }
 
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after, q:before, q:after { content: &apos;&apos;; content: none; }
-strong { font-weight: bold; } 
+strong { font-weight: bold; }
 
 table { border-collapse: collapse; border-spacing: 0; }
 img { border: 0; max-width: 100%; }
@@ -323,7 +323,7 @@ blockquote p {
     -moz-border-radius-bottomleft: 10px;
 }
 </code></pre><h1 id="15、通用媒体查询"><a href="#15、通用媒体查询" class="headerlink" title="15、通用媒体查询"></a>15、通用媒体查询</h1><pre><code>/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
+@media only screen
 and (min-device-width : 320px) and (max-device-width : 480px) {
   /* Styles */
 }
@@ -453,8 +453,8 @@ a:active { color: yellow; }
     font-weight: bold;
     top: 7px !important;
 }
-</code></pre><h1 id="22、CSS3：全屏背景"><a href="#22、CSS3：全屏背景" class="headerlink" title="22、CSS3：全屏背景"></a>22、CSS3：全屏背景</h1><pre><code>html { 
-    background: url(&apos;images/bg.jpg&apos;) no-repeat center center fixed; 
+</code></pre><h1 id="22、CSS3：全屏背景"><a href="#22、CSS3：全屏背景" class="headerlink" title="22、CSS3：全屏背景"></a>22、CSS3：全屏背景</h1><pre><code>html {
+    background: url(&apos;images/bg.jpg&apos;) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -539,12 +539,12 @@ p a:hover, p a:focus, p a:active {
     font-size: 5.4em;
     font-family: Georgia, Times New Roman, serif;
 }
-</code></pre><h1 id="31、内部CSS3-盒阴影"><a href="#31、内部CSS3-盒阴影" class="headerlink" title="31、内部CSS3 盒阴影"></a>31、内部CSS3 盒阴影</h1><pre><code>#mydiv { 
+</code></pre><h1 id="31、内部CSS3-盒阴影"><a href="#31、内部CSS3-盒阴影" class="headerlink" title="31、内部CSS3 盒阴影"></a>31、内部CSS3 盒阴影</h1><pre><code>#mydiv {
     -moz-box-shadow: inset 2px 0 4px #000;
     -webkit-box-shadow: inset 2px 0 4px #000;
     box-shadow: inset 2px 0 4px #000;
 }
-</code></pre><h1 id="32、外部CSS3-盒阴影"><a href="#32、外部CSS3-盒阴影" class="headerlink" title="32、外部CSS3 盒阴影"></a>32、外部CSS3 盒阴影</h1><pre><code>#mydiv { 
+</code></pre><h1 id="32、外部CSS3-盒阴影"><a href="#32、外部CSS3-盒阴影" class="headerlink" title="32、外部CSS3 盒阴影"></a>32、外部CSS3 盒阴影</h1><pre><code>#mydiv {
     -webkit-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.52);
     -moz-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.52);
     box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.52);
@@ -554,7 +554,7 @@ p a:hover, p a:focus, p a:active {
     padding: 0 1em;
     list-style: none;
 }
-li:before { 
+li:before {
     content: &quot;&quot;;
     border-color: transparent #111;
     border-style: solid;
@@ -688,7 +688,7 @@ a[href$=&quot;.pdf&quot;] {
     -webkit-border-radius: 20px;
     -moz-box-shadow: 0 0 5px #888;
     -webkit-box-shadow: 0 0 5px #888;
-    font-family: &apos;Bangers&apos;, arial, serif; 
+    font-family: &apos;Bangers&apos;, arial, serif;
 }
 .chat-bubble-arrow-border {
     border-color: #666 transparent transparent transparent;
@@ -761,7 +761,7 @@ ol.start {
 ol.continue {
     counter-reset: chapter 11;
 }
-</code></pre><h1 id="48、CSS悬浮提示文本"><a href="#48、CSS悬浮提示文本" class="headerlink" title="48、CSS悬浮提示文本"></a>48、CSS悬浮提示文本</h1><pre><code>a { 
+</code></pre><h1 id="48、CSS悬浮提示文本"><a href="#48、CSS悬浮提示文本" class="headerlink" title="48、CSS悬浮提示文本"></a>48、CSS悬浮提示文本</h1><pre><code>a {
     border-bottom:1px solid #bbb;
     color:#666;
     display:inline-block;
@@ -773,7 +773,7 @@ a:focus {
     color:#36c;
 }
 a:active {
-    top:1px; 
+    top:1px;
 }
 
 /* Tooltip styling */
@@ -874,7 +874,7 @@ a[data-tooltip]:active:before {
 }
 </code></pre><h1 id="53、CSS3-方格图案"><a href="#53、CSS3-方格图案" class="headerlink" title="53、CSS3 方格图案"></a>53、CSS3 方格图案</h1><pre><code>body {
     background-color: white;
-    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), 
+    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
     linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
     background-size: 100px 100px;
     background-position: 0 0, 50px 50px;
@@ -914,7 +914,7 @@ a[data-tooltip]:active:before {
     overflow: hidden;
     list-style: none;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
 ul.box li {
@@ -927,8 +927,8 @@ ul.box li {
     margin: 0 30px 30px 0;
     background: #fff;
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
-    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset; 
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset; 
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
 }
 
 ul.box li:before,
@@ -949,7 +949,7 @@ ul.box li:after {
     -moz-transform: skew(-15deg) rotate(-6deg);
     -ms-transform: skew(-15deg) rotate(-6deg);
     -o-transform: skew(-15deg) rotate(-6deg);
-    transform: skew(-15deg) rotate(-6deg); 
+    transform: skew(-15deg) rotate(-6deg);
 }
 
 ul.box li:after {
@@ -959,7 +959,7 @@ ul.box li:after {
     -moz-transform: skew(15deg) rotate(6deg);
     -ms-transform: skew(15deg) rotate(6deg);
     -o-transform: skew(15deg) rotate(6deg);
-    transform: skew(15deg) rotate(6deg); 
+    transform: skew(15deg) rotate(6deg);
 }
 </code></pre><h1 id="57、鲜艳的锚链接"><a href="#57、鲜艳的锚链接" class="headerlink" title="57、鲜艳的锚链接"></a>57、鲜艳的锚链接</h1><pre><code>a {
     color: #00e;
@@ -1021,7 +1021,7 @@ a:hover, .glow {
 
 
 <div class="tags">
-    
+    <a href="/tags/前端/">前端</a>
 </div>
 
 
